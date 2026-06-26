@@ -1,116 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>夏天 · 作品集</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
- 
-<头>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>夏季 · 作品集</title>
-  <链接 关系="样式表" 链接="style.css"/>
-</头>
+<body>
 
-<身体>
+    <!-- 导航 -->
+    <header>
+        <div class="logo">夏天</div>
 
+        <nav>
+            <a href="#home">主页</a>
+            <a href="#works">作品</a>
+            <a href="#about">关于</a>
+            <a href="#contact">联系</a>
+        </nav>
+    </header>
 
-<标题 类="导航">
-  <div class="logo">夏天</div>
-  <导航>
-    <a href="#home">主页</a>
-    <a href="#works">作品</a>
-    <a href="#about">关于</a>
-    <一个 超链接="#联系">联系</超链接>
-  </导航>
-</标题>
+    <!-- 首页 -->
+    <section id="home" class="hero">
+        <h1>夏天</h1>
+        <h2>平面设计师</h2>
+        <p>minimalist · 品牌 · 视觉识别</p>
 
+        <button onclick="scrollToWorks()">查看作品</button>
+    </section>
 
-<部分 id="主页" 类="英雄">
-  <div 类="hero-inner">
-    <h1 类="显示">夏天</h1>
-    <h2 类="显示延迟">平面设计师</h2>
-    <p class="reveal delay2"> minimalist · 品牌 · 视觉识别</p>
+    <!-- 作品 -->
+    <section id="works">
+        <h2>精选作品</h2>
 
-    <按钮 点击="滚动到部分('作品')">查看作品</按钮>
-  </div>
-</章节>
+        <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1526948128573-703ee1aeb6fa" />
+            <img src="https://images.unsplash.com/photo-1526481280695-3c687fd5432c" />
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" />
+        </div>
+    </section>
 
+    <!-- 关于 -->
+    <section id="about">
+        <h2>关于我</h2>
+        <p>我是一名专注于品牌设计与视觉系统的设计师。</p>
+    </section>
 
-<章节 id="作品" 类="章节">
-  <h2 类="章节标题 reveal">精选作品</h2>
+    <!-- 联系 -->
+    <section id="contact">
+        <h2>联系我</h2>
+        <p>Email: yourname@email.com</p>
+    </section>
 
-  <div class="masonry">
-
-    <div class="work-card" onclick="openModal(0)">
-      <img data-src="https://picsum.photos/600/800?1" class="lazy"/>
-      <div class="overlay">Brand Identity 01</div>
-    </div>
-
-    <div class="work-card" onclick="openModal(1)">
-      <img data-src="https://picsum.photos/600/700?2" class="lazy"/>
-      <div class="overlay">Poster Design 02</div>
-    </div>
-
-    <div class="work-card" onclick="openModal(2)">
-      <img data-src="https://picsum.photos/600/900?3" class="lazy"/>
-      <div class="overlay">Visual System 03</div>
-    </div>
-
-    <div class="work-card" onclick="openModal(3)">
-      <img data-src="https://picsum.photos/600/650?4" class="lazy"/>
-      <div class="overlay">Packaging 04</div>
-    </div>
-
-    <div class="work-card" onclick="openModal(4)">
-      <img data-src="https://picsum.photos/600/750?5" class="lazy"/>
-      <div class="overlay">UI Concept 05</div>
-    </div>
-
-    <div class="work-card" onclick="openModal(5)">
-      <img data-src="https://picsum.photos/600/850?6" class="lazy"/>
-      <div class="overlay">Editorial 06</div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about" class="section dark">
-  <h2 class="section-title">About</h2>
-
-  <div class="about-grid">
-    <div>
-      <p>
-        我是一名平面设计师，专注品牌视觉系统与极简设计表达。
-        追求克制、留白与结构性美感。
-      </p>
-    </div>
-
-    <div>
-      <h3>Skills</h3>
-      <ul>
-        <li>Adobe Illustrator</li>
-        <li>Adobe Photoshop</li>
-        <li>CorelDRAW</li>
-        <li>Brand Identity</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="section">
-  <h2 class="section-title">Contact</h2>
-  <p class="email">981203003@qq.com</p>
-</section>
-
-<!-- MODAL -->
-<div id="modal" class="modal" onclick="closeModal()">
-  <div class="modal-box" onclick="event.stopPropagation()">
-    <img id="modalImg" />
-    <h3 id="modalTitle"></h3>
-    <p id="modalDesc"></p>
-    <button onclick="closeModal()">Close</button>
-  </div>
-</div>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
-  <!-- test -->
